@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Home from "./pages/Home";
+import CategoryPage from "./pages/CategoryPage";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <Home />
+        <CategoryPage />
       </div>
     </>
   );
