@@ -13,9 +13,9 @@ function CategoryPage() {
       <div className="flex flex-col p-5 ">
         <h1 className="text-[30px]">Men's Cloth</h1>
         <div className="flex items-center justify-between mt-3">
-          <div className="flex ">
+          <div className="flex mobile:flex-col ">
             <p>Filter by</p>
-            <select className="ml-3 border-2  border-[#cccccc]">
+            <select className="ml-3 border-2  border-[#cccccc] mobile:mt-2">
               <option selected disabled>
                 Size
               </option>
@@ -23,7 +23,7 @@ function CategoryPage() {
               <option>Medium</option>
               <option>Large</option>
             </select>
-            <select className="ml-3 border-2  border-[#cccccc]">
+            <select className="ml-3 border-2  border-[#cccccc] mobile:mt-2">
               <option selected disabled>
                 Color
               </option>

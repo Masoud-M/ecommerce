@@ -4,7 +4,7 @@ import Catagory from "./Catagory";
 
 function Catagories() {
   return (
-    <div className="flex justify-between items-center p-5">
+    <div className="flex mobile:flex-col justify-between items-center p-5">
       {ApiCatagories.map((catagory, index) => {
         return <Catagory item={catagory} key={index} />;
       })}

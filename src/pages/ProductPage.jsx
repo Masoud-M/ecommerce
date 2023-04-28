@@ -10,7 +10,7 @@ function ProductPage() {
     <div>
       <Announce />
       <Navbar />
-      <div className="flex justify-center ">
+      <div className="flex justify-center mobile:flex-col mobile:p-5">
         <div className="flex flex-1 items-center justify-center">
           {/* img */}
           <img
@@ -21,8 +21,10 @@ function ProductPage() {
         </div>
         <div className="flex flex-[1.3] items-start justify-start flex-col my-10">
           {/* info */}
-          <h1 className="title text-[40px]">Product name placeholder</h1>
-          <p className="pr-[4rem] text-justify  mt-4">
+          <h1 className="title text-[30px] mobile:text-center">
+            Product name placeholder
+          </h1>
+          <p className="pr-[4rem] text-justify  mt-4 mobile:pr-0 mobile:px-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
             corporis accusantium nihil sunt commodi, quo ipsum! Distinctio, illo
             placeat est doloremque atque, accusantium sit blanditiis, velit qui
@@ -52,7 +54,9 @@ function ProductPage() {
           <div className="mt-5">
             <Counter />
           </div>
-          <button className="btn mt-5">Add to cart</button>
+          <button className="btn mt-5 mobile:self-center mobile:mt-7">
+            Add to cart
+          </button>
         </div>
       </div>
       <Newsletter />

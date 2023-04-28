@@ -16,7 +16,7 @@ export default class Login extends Component {
   render() {
     return (
       <div className="flex justify-center">
-        <div className="flex flex-col absolute top-[30%] shadow-lg border-[2px] rounded-lg p-5 w-[60%]">
+        <div className="flex flex-col absolute top-[30%] shadow-lg border-[2px] rounded-lg p-5 w-[80%]">
           <span className="text-2xl ">Register</span>
           <div className="flex mt-3 ">
             <input
