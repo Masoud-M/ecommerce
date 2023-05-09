@@ -3,7 +3,7 @@ import { ApiTopProducts } from "../apifolder/TopProductsApi";
 import Product from "./Product";
 function Products() {
   return (
-    <div className="flex flex-wrap p-5 items-center justify-center">
+    <div className="flex flex-row flex-wrap p-5 items-center justify-center">
       {ApiTopProducts.map((product, index) => {
         return <Product item={product} key={index} />;
       })}

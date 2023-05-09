@@ -27,7 +27,7 @@ function Product({ item }) {
 
   return (
     <div
-      className="flex flex-1 items-center justify-center min-w-[250px] min-h-[280px] overflow-hidden rounded-md shadow-lg  m-2  relative object-cover "
+      className="flex flex-initial items-center justify-center w-[250px] h-[280px] overflow-hidden rounded-md shadow-lg  m-2  relative object-cover "
       onMouseEnter={handleHoverEnter}
       onMouseLeave={handleHoverExit}
     >
