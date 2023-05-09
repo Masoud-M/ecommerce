@@ -2,6 +2,7 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import React, { useState } from "react";
 import { ApiSlides } from "../apifolder/SliderApi";
 import "./Slider.css";
+import { Link } from "react-router-dom";
 
 const Slider = () => {
   //useState hooks
@@ -56,7 +57,9 @@ const Slider = () => {
                 <div className="des  flex flex-col flex-1 place-items-start justify-center ml-11">
                   <h2 className="text-[55px]">{slide.content.h2}</h2>
                   <p className="text-[30px]">{slide.content.p}</p>
-                  <button className="btn">Shop Now</button>
+                  <button className="btn">
+                    <Link to="/category">See more</Link>
+                  </button>
                 </div>
               </div>
             </div>
