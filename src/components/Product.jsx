@@ -1,4 +1,5 @@
 import {
+  Favorite,
   FavoriteBorderOutlined,
   SearchOutlined,
   ShoppingCartOutlined,
@@ -19,6 +20,11 @@ function Product({ item }) {
   const iconStyle =
     "h-[40px] w-[40px] rounded-full bg-white flex items-center justify-center m-3 cursor-pointer hover:bg-[#894af3]  hover:text-white  hover:scale-110 ease-in duration-100";
 
+  const [isFavorite, setIsFavorite] = useState(false);
+  const handleFavorite = () => {
+    setIsFavorite(!isFavorite);
+  };
+
   return (
     <div
       className="flex flex-1 items-center justify-center min-w-[250px] min-h-[280px] overflow-hidden rounded-md shadow-lg  m-2  relative object-cover "
@@ -36,8 +42,8 @@ function Product({ item }) {
         <div className={iconStyle}>
           <ShoppingCartOutlined />
         </div>
-        <div className={iconStyle}>
-          <FavoriteBorderOutlined />
+        <div onClick={handleFavorite} className={iconStyle}>
+          {isFavorite ? <Favorite /> : <FavoriteBorderOutlined />}
         </div>
         <div className={iconStyle}>
           <SearchOutlined />
