@@ -7,7 +7,7 @@ import {
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
 function Product({ item }) {
-  const [hoverEffect, setHoverEffect] = useState("opacity-0");
+  const [hoverEffect, setHoverEffect] = useState(" opacity-0");
 
   const handleHoverEnter = () => {
     setHoverEffect(" opacity-100 hover:opacity-100 hover:bg-[rgba(0,0,0,0.2)]");
@@ -34,7 +34,7 @@ function Product({ item }) {
       <img className="  overflow-hidden w-full h-full" src={item.src} alt="/" />
       <div
         className={
-          `flex items-center justify-center w-full h-full absolute  ease-in duration-100` +
+          `flex items-center justify-center w-full h-full absolute  ease-in duration-100  ` +
           hoverEffect
         }
       >
