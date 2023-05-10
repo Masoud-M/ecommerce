@@ -18,10 +18,7 @@ function Cart() {
           <button className="btn bg-white text-[#8a4af3] border-2 border-[#8a4af3] hover:bg-white">
             Continue Shopping
           </button>
-          <div className="flex underline text-lg hover:cursor-pointer mobile:my-3">
-            <p>Items in your cart : 4</p>
-            <p className="ml-5">Wishlist item : 0</p>
-          </div>
+
           <button className="btn">Checkout</button>
         </div>
 
