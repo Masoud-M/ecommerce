@@ -57,7 +57,7 @@ const Slider = () => {
                 <div className="des  flex flex-col flex-1 place-items-start justify-center ml-11">
                   <h2 className="text-[55px]">{slide.content.h2}</h2>
                   <p className="text-[30px]">{slide.content.p}</p>
-                  <button className="btn">
+                  <button className="btn mt-4">
                     <Link to="/category">See more</Link>
                   </button>
                 </div>
