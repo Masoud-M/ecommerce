@@ -36,10 +36,10 @@ function Navbar() {
             <Link to="/register">Register</Link>
           </div>
           <div className={style}>
-            <Link to="login">Sign in</Link>
+            <Link to="/login">Sign in</Link>
           </div>
           <div className={style}>
-            <Link to="cart">
+            <Link to="/cart">
               <Badge badgeContent={2} color="primary">
                 <ShoppingCartOutlined />
               </Badge>
